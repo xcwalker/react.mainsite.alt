@@ -1,4 +1,4 @@
-import css from "../styles/components/home/hero.module.css";
+import css from "../../styles/components/home/hero.module.css";
 
 export default function HomeHero() {
   return (

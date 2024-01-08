@@ -51,16 +51,18 @@ section#hero > .container > h1 > span {
   --_scroll-offset: -10vw;
 
   animation: hero-scroll ease both;
-  animation-duration: -1s;
-  animation-timeline: view();
-  animation-range-start: entry 70vh;
-  translate: -5vw 0;
+  animation-duration: 1ms;
+  animation-timeline: scroll();
+  animation-range-start: exit;
+  animation-range-end: exit-crossing 150px;
+  translate: -2.5vw 0;
 }
 
 section#hero > .container > h1 > span:last-of-type {
   --_scroll-offset: 10vw;
-  animation-range-start: entry 60vh;
-  translate: 5vw 0;
+  animation-range-start: exit;
+  animation-range-end: exit-crossing 150px;
+  translate: 2.5vw 0;
 }
 
 @keyframes hero-scroll {

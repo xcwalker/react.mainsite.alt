@@ -2,6 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-route
 import Home from "./pages/home";
 import { useEffect } from "react";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
             <Route path=":id" element={<span>Temp</span>} />
           </Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
