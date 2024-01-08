@@ -1,0 +1,75 @@
+.navBtn {
+  /* position */
+  position: relative;
+
+  /* sizing */
+  width: 100%;
+  padding: 0.5rem 1rem;
+
+  /* flex */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+
+  /* text */
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  /* styling */
+  color: inherit;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  transition: background-color 150ms ease;
+}
+
+.navBtn.email {
+  text-transform: none;
+}
+
+.navBtn .icon {
+  /* variables */
+  --_size: 1.25rem;
+
+  /* sizing */
+  width: var(--_size);
+  height: var(--_size);
+
+  /* text */
+  font-size: var(--_size);
+
+  /* styling */
+  fill: currentColor;
+  color: inherit;
+  border-radius: 0.25rem;
+  overflow: clip;
+}
+
+.navBtn .shrink {
+  padding: 0.125rem;
+}
+
+.navBtn .tab {
+  /* position */
+  position: absolute;
+  right: 0.5rem;
+  
+  /* variables */
+  --_size: 1rem;
+
+  /* sizing */
+  width: var(--_size);
+  height: var(--_size);
+
+  /* text */
+  font-size: var(--_size);
+}
+
+.navBtn:hover,
+.navBtn:focus-visible,
+.navBtn.active {
+  background-color: var(--background-color-200);
+}

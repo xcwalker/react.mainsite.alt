@@ -1,0 +1,70 @@
+section#hero {
+  /* sizing */
+  width: 100%;
+}
+
+section#hero > .container {
+  /* position */
+  position: relative;
+
+  /* sizing */
+  width: 100%;
+  height: 300px;
+
+  /* styling */
+  border-radius: 1rem;
+  overflow: clip;
+}
+
+section#hero > .container > img.background {
+  /* position */
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  /* sizing */
+  width: 100%;
+  height: 100%;
+
+  /* styling */
+  object-fit: cover;
+  filter: blur(0.5rem) brightness(0.75);
+}
+
+section#hero > .container > h1 {
+  /* sizing */
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+  /* flex */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* text */
+  font-size: clamp(3rem, 5vw, 4rem);
+}
+
+section#hero > .container > h1 > span {
+  --_scroll-offset: -10vw;
+
+  animation: hero-scroll ease both;
+  animation-duration: -1s;
+  animation-timeline: view();
+  animation-range-start: entry 70vh;
+  translate: -5vw 0;
+}
+
+section#hero > .container > h1 > span:last-of-type {
+  --_scroll-offset: 10vw;
+  animation-range-start: entry 60vh;
+  translate: 5vw 0;
+}
+
+@keyframes hero-scroll {
+  to {
+    translate: var(--_scroll-offset, 50%) 0;
+  }
+}
