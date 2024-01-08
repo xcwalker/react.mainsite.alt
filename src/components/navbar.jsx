@@ -1,6 +1,6 @@
-import { Link, useLocation } from "react-router-dom"
-import css from "../styles/components/nav-btn.module.css"
-import "../styles/components/navbar.css"
+import { Link, useLocation } from "react-router-dom";
+import css from "../styles/components/nav-btn.module.css";
+import "../styles/components/navbar.css";
 
 export default function Navbar() {
   const location = useLocation();
@@ -29,7 +29,7 @@ export default function Navbar() {
               ReactRadio
             </NavButton>
             <NavButton internal={false} to="https://searrson.xcwalker.dev/">
-              <svg className={css.icon + " " + css.shrink}  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.47 135.47">
+              <svg className={css.icon + " " + css.shrink} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.47 135.47">
                 <path
                   fill="#fff"
                   d="M37.303 80.767v96.899h96.9V157.9H57.07v-57.368h115.7V80.767zm38.567 38.567v19.765h77.134v57.369h-115.7v19.765h135.47v-96.9z"
@@ -49,6 +49,23 @@ export default function Navbar() {
             <NavButton internal={false} to="https://therwim.xcwalker.dev/">
               <span className={"material-symbols-outlined " + css.icon}>stream</span>
               Therwim
+            </NavButton>
+            <NavButton internal={false} to="https://nesbitt.nexus/">
+              <svg className={css.icon + " " + css.shrink} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.47 135.47">
+                <g strokeWidth={10}>
+                  <path
+                    d="m2074.1 1521 512 512h-85.333l-426.67-426.66zM2244.7 2033v-170.67l85.333 85.333v85.333zM2159.4 1521h85.333l341.33 341.33v85.333zM2586.1 1777l-85.333-85.333v-170.67h85.333zM2074.1 1691.7l85.333 85.333v256H2074.1z"
+                    transform="translate(-548.77 -402.43) scale(.26458)"
+                  />
+                </g>
+              </svg>
+              Nesbitt Nexus
+            </NavButton>
+            <NavButton internal={false} to="https://archivest.net /">
+              <svg className={css.icon + " " + css.shrink} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.47 135.47">
+                <path d="M54.187 0 0 135.47h41.242a184.895 184.895 0 0 1 94.225-36.377V71.9a212.11 212.11 0 0 0-95.635 31.726L67.734 33.87l14.071 35.179a225.856 225.856 0 0 1 24.468-6.562L81.28.004zm72.606 113.78a171.025 171.025 0 0 0-24.815 5.696l6.395 15.988h27.093z" />
+              </svg>
+              <span>Archive<sup>st</sup></span>
             </NavButton>
           </ul>
           <ul>

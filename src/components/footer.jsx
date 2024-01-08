@@ -6,7 +6,7 @@ export default function Footer() {
     <section id="footer">
       <div className="container">
         <Logo />
-        <span>Copyright © 2022 XCWalker.</span>
+        <span>Copyright © 2024 XCWalker.</span>
         <span>All rights reserved.</span>
       </div>
     </section>
